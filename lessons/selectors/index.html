@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            height: 10000px;
+        }
+
+        #test111{
+            color: chartreuse;
+        }
+        p{
+            color: blue ;
+        }
+        .paid{
+            color: orangered;
+           
+        }
+        .test{
+            color: seagreen;
+        }
+
+        
+        [href^="https://cars.av.by/audi"]{
+            background-color: coral;
+        }
+        [href^="https://cars.av.by/bmw"]{
+            background-color: blue;
+            color: #fff;
+        }
+        [src$=".jpg"]{
+            border: 3px solid red;
+        }
+        [src*="wall"]{
+            border: 3px solid violet;
+        }
+        [src$=".png"]{
+            border: 3px solid blue;
+        }
+        [href^="http"] { font-weight: bold }
+
+       .a{
+           font-style: italic;
+       }
+       div.a{
+        font-weight: 900;
+       }
+       h1 + p{
+           color: darkorange;
+       }
+       h1 ~ p{
+           font-weight: 900;
+       }
+    </style>
+</head>
+<body>
+
+    <div class="one">
+        <ul class="two">
+            <li class="three">
+                <a href="" class="four">
+                    <span>
+                        <em></em>
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <h1 style="color: red; text-align: center;">hello</h1>
+
+    <p>hello</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem unde, eos, quas fugiat possimus voluptas reprehenderit nulla autem est porro asperiores quod laboriosam ipsum sapiente minus voluptate harum illo eaque.</p>
+    <p class="paid test" style="color: slateblue;" id="test111">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat soluta, a illo numquam id explicabo commodi illum amet reiciendis, minima iure vero laboriosam aliquid? Pariatur illum architecto eaque officia sunt.</p>
+    <p class="test paid">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat soluta, a illo numquam id explicabo commodi illum amet reiciendis, minima iure vero laboriosam aliquid? Pariatur illum architecto eaque officia sunt.</p>
+    <h2>test</h2>
+    <p class="paid test">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat soluta, a illo numquam id explicabo commodi illum amet reiciendis, minima iure vero laboriosam aliquid? Pariatur illum architecto eaque officia sunt.</p>
+    <p class="paid">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat soluta, a illo numquam id explicabo commodi illum amet reiciendis, minima iure vero laboriosam aliquid? Pariatur illum architecto eaque officia sunt.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat soluta, a illo numquam id explicabo commodi illum amet reiciendis, minima iure vero laboriosam aliquid? Pariatur illum architecto eaque officia sunt.</p>
+    <p class="test">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ducimus odit incidunt, asperiores nam molestias, maiores temporibus minima natus, corporis odio recusandae quo illo quam est unde assumenda saepe ut.</p>
+
+    <hr>
+    
+
+    <a href="https://www.onliner.by/" title="hello">onliner</a> <br>
+    <a href="https://av.by/">av.by</a> <br>
+    <a href="https://www.kufar.by/" title="hello">kufar.by</a> <br>
+    <br>
+    <hr>
+    <br>
+    <a href="https://cars.av.by/audi">audi</a> <br>
+    <a href="https://cars.av.by/bmw">bmw</a> <br>
+    <a href="https://cars.av.by/bmw/ix">bmw_ix</a> <br>
+    <a href="https://cars.av.by/audi/rs-q3">audi_rs-q3</a> <br>
+    <br>
+    <hr>
+    <br>
+
+    <img src="../float/1.jpg" alt=""> <br>
+    <img src="../float/wall_g200.png" alt=""> <br>
+    
+    <div>
+        <span></span>
+        <ul>
+            <li>
+                <a href="">
+                    <span></span>
+                </a>
+            </li>
+            <li>
+                <span></span>
+            </li>
+        </ul>
+    </div>
+
+    <p class="a">hello</p>
+    <div class="a">ldfjgori</div>
+    <div class="out main"></div>
+</body>
+</html>

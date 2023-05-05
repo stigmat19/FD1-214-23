@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            height: 10000px;
+        }
+       /* li:first-child{
+           background-color: red; 
+       }
+       li:last-child{
+           background-color: deepskyblue;
+       }
+       li:nth-child(3){
+            background-color: fuchsia;
+       }
+       ul:last-child{
+           background-color: green;
+       } */
+
+       li:nth-child(4n+3){
+           background-color: green;
+       }
+       p:first-of-type{
+           background-color: red;
+       }
+       li:last-child{
+           background-color: indigo;
+       }
+       a:link{
+           color: rgb(0, 167, 42);
+       }
+       a:visited{
+           color: magenta;
+       }
+       a:focus{
+           font-weight: bolder;
+           outline: none;
+       }
+       a:active{
+           font-style: italic;
+       }
+       a:hover{
+           background-color: mediumpurple;
+       }
+       h1::before{
+           content: "------- ";
+       }
+       h1::after{
+           content: " -------";
+       }
+       ul{
+           counter-reset: item;
+       }
+       li:before{
+        counter-increment: item;
+        content: 'Товар ' counter(item) ': '
+       }
+
+    </style>
+
+</head>
+<body>
+    <h1 data-blabla='test'>hello</h1>
+
+    <h2>:SDKj\dfsju</h2>
+    <h3>test</h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, aliquid? Odio iusto voluptatum omnis sit nesciunt, aut voluptatem sequi fugiat dolore harum laboriosam. Harum voluptate accusantium, quisquam repellendus laudantium ex.</p>
+    <p>world</p>
+    <p>test</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, facere quisquam. Illo debitis incidunt perspiciatis tempora impedit laudantium facere enim fugit vitae quos, accusamus amet neque natus asperiores facilis laborum!</p>
+    <p>Quas quis reprehenderit ipsam repellendus quisquam recusandae illum error veniam ipsa ex necessitatibus, veritatis sequi rerum incidunt consectetur laborum. Eum exercitationem accusantium ipsam natus dignissimos aliquid saepe ut, mollitia ratione?</p>
+    <p>Ut, ea magnam, fugiat a eum vitae iusto rem officiis blanditiis sed provident quisquam excepturi quaerat illo in quam eaque ullam aperiam sunt iste repudiandae quae molestiae alias doloribus. Suscipit!</p>
+    <p>Rem assumenda quos dolor quibusdam fugit nulla nihil rerum officia, reiciendis officiis deleniti architecto illo tempore corrupti ipsa delectus eum doloribus? Fugit vero dolore facere eveniet iure pariatur aliquid molestias!</p>
+    <p>Ratione praesentium vitae ipsa non minus laborum omnis officia dolorum reiciendis a necessitatibus, optio voluptatum hic impedit odit vel maiores illum provident dignissimos cum aliquid temporibus enim tenetur rerum. Ducimus.</p>
+
+    <ul>
+        <li>телевизор</li>
+        <li>стиралка</li>
+        <li>гриль</li>
+        <li>утюг</li>
+        <li>холодильник</li>
+        <li>телевизор</li>
+        <li>стиралка</li>
+        <li>гриль</li>
+        <li>утюг</li>
+        <li>холодильник</li>
+        <li>телевизор</li>
+        <li>стиралка</li>
+        <li>гриль</li>
+        <li>утюг</li>
+        <li>холодильник</li>
+        <li>телевизор</li>
+        <li>стиралка</li>
+        <li>гриль</li>
+        <li>утюг</li>
+        <li>холодильник</li>
+        <li>телевизор</li>
+        <li>стиралка</li>
+        <li>гриль</li>
+        <li>утюг</li>
+        <li>холодильник</li>
+    </ul>
+
+    
+
+    <a href="www.test.by">link1</a> <br>
+    <a href="https://www.weblancer.net/">weblancer</a>
+    
+</body>
+</html>
