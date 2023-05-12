@@ -1,0 +1,10 @@
+@media all and (max-width: 600px){
+    .menu, .banner{
+        float: none;
+        width: auto;
+    }
+    .header{
+        height: 80px;
+        background-color: aqua;
+    }
+}

@@ -1,0 +1,8 @@
+@media print {
+    .content{
+        font-size: 120px;
+        font-weight: 900;
+        font-style: italic;
+    }
+    
+}

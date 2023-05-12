@@ -1,0 +1,11 @@
+@media all and (max-width: 1500px){
+    .header{
+        background-color:crimson;
+    }
+    .menu{
+        float: right;
+    }
+    .banner{
+        float: left;
+    }
+}
