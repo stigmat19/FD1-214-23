@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .test{
+            width: 200px;
+            height: 200px;
+            background-color: aquamarine;
+        }
+        input:valid{
+            border: 3px solid green;
+        }
+        input:invalid{
+            border: 3px solid red;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <!-- <header class="head"></header>   --- <div class="header"></div>
+    <footer></footer>
+    <aside></aside>
+    <section></section> -->
+
+    <mark>test</mark>
+
+    <div data-blabla="hello" draggable="true" contenteditable="true" class="test"></div>
+
+    <datalist id=animalslist>
+        <option value="собака">
+        <option value="кошка">
+        <option value="попугай">
+      </datalist>
+      Введите вид животного: <input type=text list=animalslist>
+
+      <form action="">
+        <input type="number" min="10" max="100"> <br>
+        <input type="date"> <br>
+        <input type="color"> <br>
+        <input type="submit">
+      </form>
+      
+
+
+
+
+
+
+
+<script>
+    const input = document.querySelector('[type="color"]');
+    input.addEventListener('change', function(e){
+        console.log(e.target.value)
+    })
+    
+</script>
+
+
+
+</body>
+</html>
