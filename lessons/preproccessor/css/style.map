@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../scss/style.scss",
+		"../scss/variables.scss"
+	],
+	"sourcesContent": [
+		"@import \"variables.scss\";\r\n\r\n.remark\r\n{\r\n    color: $red;\r\n\r\n    span.left\r\n    {\r\n        margin-right: 1em;\r\n\r\n        a {\r\n            &:hover{\r\n                text-decoration: underline;\r\n            }\r\n            &:first-child\r\n            {\r\n                text-decoration: underline;\r\n            }\r\n        }\r\n    }\r\n}",
+		"$red: #f00;\r\n\r\n// size\r\n$default: 16px;"
+	],
+	"names": [],
+	"mappings": ";AAEA,AAAA,OAAO,CACP;EACI,KAAK,ECJH,IAAI;CDoBT;;;AAlBD,AAII,OAJG,CAIH,IAAI,AAAA,KAAK,CACT;EACI,YAAY,EAAE,GAAG;CAWpB;;;AAjBL,AASY,OATL,CAIH,IAAI,AAAA,KAAK,CAIL,CAAC,AACI,MAAM,CAAA;EACH,eAAe,EAAE,SAAS;CAC7B;;;AAXb,AAYY,OAZL,CAIH,IAAI,AAAA,KAAK,CAIL,CAAC,AAII,YAAY,CACb;EACI,eAAe,EAAE,SAAS;CAC7B"
+}

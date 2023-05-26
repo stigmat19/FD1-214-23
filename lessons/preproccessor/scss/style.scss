@@ -1,0 +1,46 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+.remark
+{   
+    display: flex;
+    color: $red;
+    font-size: $default;
+
+    & > span.left
+    {
+        margin-right: 1em;
+        font-size: $default - 4;
+
+        a {
+            font-size: $default * 2;
+
+            &:hover{
+                text-decoration: underline;
+            }
+            &:first-child
+            {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.btn{
+    @include btn();
+}
+
+$w: 400px;
+.btn1{
+    @include btn($w,50px);
+    font-size: 12px;
+}
+
+@for $hhh from 1 through 10
+{
+    .color#{$hhh}
+    {
+        text-align: center;
+        font-size: $hhh * 3 + 10px;
+    }
+}

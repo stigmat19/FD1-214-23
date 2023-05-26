@@ -1,0 +1,27 @@
+@mixin btn($w: 200px, $h: 100px)
+{
+    width: $w;
+    height: $h;
+    background-color: aqua;
+    border-radius: 20px;
+    border: 1px solid red;
+    font-size: 20px;
+
+    @include media(1700px){
+        background-color: blue;
+        color: #fff;
+    }
+
+    @include media(1500px){
+        background-color: rgb(0, 255, 0);
+        color: red;
+    }
+}
+
+@mixin media($w)
+{
+    @media all and (max-width: $w)
+    {
+        @content;
+    }
+}

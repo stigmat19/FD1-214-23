@@ -1,0 +1,21 @@
+/* line 3, D:/FD1-214-23-1/lessons/preproccessor/scss/style.scss */
+.remark {
+  color: #f00;
+}
+
+/* line 7, D:/FD1-214-23-1/lessons/preproccessor/scss/style.scss */
+.remark span.left {
+  margin-right: 1em;
+}
+
+/* line 12, D:/FD1-214-23-1/lessons/preproccessor/scss/style.scss */
+.remark span.left a:hover {
+  text-decoration: underline;
+}
+
+/* line 15, D:/FD1-214-23-1/lessons/preproccessor/scss/style.scss */
+.remark span.left a:first-child {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=style.css.map */

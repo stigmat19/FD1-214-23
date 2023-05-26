@@ -1,0 +1,114 @@
+.remark {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #f00;
+  font-size: 16px;
+}
+.remark > span.left {
+  margin-right: 1em;
+  font-size: 12px;
+}
+.remark > span.left a {
+  font-size: 32px;
+}
+.remark > span.left a:hover {
+  text-decoration: underline;
+}
+.remark > span.left a:first-child {
+  text-decoration: underline;
+}
+
+.btn {
+  width: 200px;
+  height: 100px;
+  background-color: aqua;
+  border-radius: 20px;
+  border: 1px solid red;
+  font-size: 20px;
+}
+@media all and (max-width: 1700px) {
+  .btn {
+    background-color: blue;
+    color: #fff;
+  }
+}
+@media all and (max-width: 1500px) {
+  .btn {
+    background-color: lime;
+    color: red;
+  }
+}
+
+.btn1 {
+  width: 400px;
+  height: 50px;
+  background-color: aqua;
+  border-radius: 20px;
+  border: 1px solid red;
+  font-size: 20px;
+  font-size: 12px;
+}
+@media all and (max-width: 1700px) {
+  .btn1 {
+    background-color: blue;
+    color: #fff;
+  }
+}
+@media all and (max-width: 1500px) {
+  .btn1 {
+    background-color: lime;
+    color: red;
+  }
+}
+
+.color1 {
+  text-align: center;
+  font-size: 13px;
+}
+
+.color2 {
+  text-align: center;
+  font-size: 16px;
+}
+
+.color3 {
+  text-align: center;
+  font-size: 19px;
+}
+
+.color4 {
+  text-align: center;
+  font-size: 22px;
+}
+
+.color5 {
+  text-align: center;
+  font-size: 25px;
+}
+
+.color6 {
+  text-align: center;
+  font-size: 28px;
+}
+
+.color7 {
+  text-align: center;
+  font-size: 31px;
+}
+
+.color8 {
+  text-align: center;
+  font-size: 34px;
+}
+
+.color9 {
+  text-align: center;
+  font-size: 37px;
+}
+
+.color10 {
+  text-align: center;
+  font-size: 40px;
+}
+/*# sourceMappingURL=style.css.map */
