@@ -12,13 +12,32 @@
     <input type="button" value="1" onclick="getNumber(1)"> <br>
     <input type="button" value="2" onclick="getNumber(2)"> <br>
     <input type="button" value="3" onclick="getNumber(3)"> <br>
-
+    <input type="button" value="+" onclick="getOperation('+')"> <br>
+    <input type="button" value="-" onclick="getOperation('-')"> <br>
+    <input type="button" value="=" onclick="getResult()"> <br>
 
     <script>
+        var x = null;
+        var y = null;
+        var oper;
+
         function getNumber(number) {
-            console.log(number);
+            if(x === null){
+                x = number
+            } else{
+                y = number
+            }
         }
 
+        function getOperation(sign){
+            oper = sign;
+        }
+
+        function getResult(){
+            switch(oper){
+                case "+" : console.log(x+y); break;
+            }
+        }
 
         var beatles = {
             name: 'Beatles',
