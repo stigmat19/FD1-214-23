@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button onclick="sayHello('Ivan')">click</button>
+    <button onclick="sayHello('Petr')">click</button>
+    <button onclick="sayHello('Sidr')">click</button>
+    <script>
+        function sayHello(name){
+            alert("hello " + name);
+        }
+
+        var x = 'hello'
+
+        console.log(x);
+        // var a = prompt();
+        var a = 10;
+        var b = 20;
+
+        console.log(a + b);
+        console.log(a - b);
+        console.log(a / b);
+        console.log(a * b);
+
+        console.log(b - a);
+        console.log(b / a);
+
+        console.log('================')
+
+        //function declaration
+        // function calc(x, y, sign){
+        //     switch(sign){
+        //         case "+": console.log(x + y); break;
+        //         case "/": console.log(x / y); break;
+        //         case "-": console.log(x - y); break;
+        //         case "*": console.log(x * y); break;
+        //     }
+        // }
+
+
+        //function expression
+        var calc = function (x, y, sign) {
+
+            var a = 100;
+
+            console.log('-----local', a);
+
+            switch (sign) {
+                case "+": return x + y;
+                case "/": return x / y;
+                case "-": return x - y;
+                case "*": return x * y;
+            }
+        }
+
+        calc(a, b, "+");
+        calc(a, b, "-");
+        calc(b, a, "-");
+        var itemUSD = calc(30, 50, "/");
+        var itemEUR = calc(50, 30, "/");
+
+
+
+        function getNumWord(num, word1, word2, word5) {
+            var dd = num % 100;
+            if ((dd >= 11) && (dd <= 19))
+                return word5;
+            var d = num % 10;
+            if (d == 1)
+                return word1;
+            if ((d >= 2) && (d <= 4))
+                return word2;
+            return word5;
+        }
+
+        console.log(getNumWord(11, 'груша','груши', 'груш'))
+    </script>
+
+</body>
+
+</html>

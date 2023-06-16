@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="button" value="1" onclick="getNumber(1)"> <br>
+    <input type="button" value="2" onclick="getNumber(2)"> <br>
+    <input type="button" value="3" onclick="getNumber(3)"> <br>
+
+
+    <script>
+        function getNumber(number) {
+            console.log(number);
+        }
+
+
+        var beatles = {
+            name: 'Beatles',
+            members: ['McCartney', 'Lennon', 'Harrison', 'Starr'],
+            albums: [
+                { name: 'Please Please Me', year: 1963 },
+                { name: 'With The Beatles', year: 1963 },
+                { name: "A Hard Day's Night", year: 1964 }
+            ]
+        };
+
+        for(var k in beatles){
+            if(typeof beatles[k] === 'string'){
+                console.log(beatles[k])
+            } else{
+                for(var i = 0; i < beatles[k].length; i++){
+                    if(typeof beatles[k][i] === 'string'){
+                        console.log(beatles[k][i])
+                    } else{
+                        console.log(beatles[k][i].name);
+                        console.log(beatles[k][i].year);
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
